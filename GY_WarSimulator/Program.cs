@@ -6,7 +6,30 @@ namespace GY_WarSimulator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+
+            Game game = new Game();
+
+            game.createSoldier();
+            game.createSoldier2();
+            game.fight();
+
+            Army army = new Army();
+
+            army.grandBattle();
+
+
+
+            Console.ReadLine();
+
+
         }
+
+
+
+
+
+
+
     }
 }
