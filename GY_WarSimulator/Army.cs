@@ -51,7 +51,7 @@ namespace GY_WarSimulator
             int orduBirIndexi = 0;
             int orduIkiIndexi = 0;
 
-            while (true)
+            while (orduBirIndexi != army1.Count && orduIkiIndexi != army2.Count)
             {
                 game.soldier1 = army1[orduBirIndexi];
                 game.soldier2 = army2[orduIkiIndexi];
@@ -70,22 +70,14 @@ namespace GY_WarSimulator
 
             }
 
-
-
-
-
-
-
+            if (orduBirIndexi > orduIkiIndexi)
+            {
+                Console.WriteLine("ORDU2 SAVASI KAZANDI");
+            }
+            else
+                Console.WriteLine("ORDU1 SAVASI KAZANDI");
 
         }
-
-
-
-
-
-
-
-
 
 
 
